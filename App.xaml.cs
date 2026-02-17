@@ -11,7 +11,9 @@ namespace Valgusfoor
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new AppShell());
+            var startPage = new ValgusfoorPage();
+
+            return new Window(startPage);
         }
     }
 }
